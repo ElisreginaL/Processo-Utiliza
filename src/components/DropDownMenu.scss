@@ -1,0 +1,88 @@
+/* DropdownMenu.scss */
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+/* Container do botão de toggle */
+.toggle-container {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Mantém a distribuição entre o texto e a seta */
+  cursor: pointer;
+  background-color: #B8B7D1;
+  color: #3B378D;
+  width: 250px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-text {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+
+/* Estilo da seta */
+.arrow {
+  width: 30px; /* Definindo tamanho fixo da seta */
+  height: 30px; /* Ajuste proporcional da seta */
+  transition: transform 0.3s ease;
+}
+
+/* Alinhando a seta ao centro (tanto horizontal quanto verticalmente) */
+.toggle-container .arrow {
+  margin-left: 10px; /* Para garantir que haja espaço entre a seta e o texto */
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+}
+
+  
+
+  
+  .arrow.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .nav-box {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinha abaixo do botão */
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 250px;
+    z-index: 10;
+  }
+  
+  .nav-box.show {
+    display: block;
+  }
+  
+  .nav-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .nav-box li {
+    margin: 10px 0;
+  }
+  
+  .nav-box a {
+    text-decoration: none;
+    color: #3B378D;
+    font-weight: bold;
+    display: block;
+    padding: 8px 0;
+  }
+  
+  .nav-box a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+  }
+  
