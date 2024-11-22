@@ -1,0 +1,96 @@
+/* Acionamento.scss */
+
+/* Wrapper para colocar as duas seções lado a lado */
+.main-content-wrapper {
+    display: flex;
+    justify-content: space-between; /* Espaça as duas seções */
+    gap: 20px; /* Espaço entre as seções */
+    margin-top: 20px;
+}
+
+/* Estilos para a seção FAST CLICK */
+.main-content-fastclick {
+    flex: 1; /* Isso faz com que essa seção ocupe o espaço disponível */
+    background-color: #F4F3F8; /* Cor de fundo para diferenciar */
+    padding: 20px;
+    border-radius: 13px; /* Bordas arredondadas */
+}
+
+.main-content-fastclick h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-content-fastclick ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-content-fastclick ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para a seção Processo */
+.processo {
+    flex: 2; /* Faz com que a seção do processo ocupe mais espaço que a seção de FAST CLICK */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 13px;
+}
+
+/* Estilos para o título dentro do processo */
+.processo h2 {
+    color: #3B378D;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: -10px; /* Ajuste o valor conforme necessário */
+}
+
+/* Estilos para o parágrafo */
+.processo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+/* Estilos para as divs de acionamento */
+.acionamento-view, .acionamento-credenciado {
+    width: 400px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3B378D; /* Removido o !important */
+    font-weight: bold;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 8px;
+    border-radius: 25px;
+    background-color: #D1C8F0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Efeito de hover */
+.acionamento-view:hover, .acionamento-credenciado:hover {
+    color: white !important; /* Garante que a cor branca seja aplicada no hover */
+    background-color: #3B378D;
+    border-radius: 25px;
+}
+
+/* Estilos para as caixas de diálogo adicionais que aparecem abaixo das opções */
+.additional-content {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #d1c8f0;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #000;
+}

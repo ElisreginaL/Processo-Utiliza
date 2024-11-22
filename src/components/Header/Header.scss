@@ -1,0 +1,15 @@
+header {
+  display: flex;
+  flex-direction: column;  // Organiza os elementos filhos (MainNavbar e SecondaryNavbar) em coluna, um embaixo do outro
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+//header .main-navbar {
+  //margin-bottom: 10px; // Espaçamento entre a MainNavbar e a SecondaryNavbar, se necessário
+//}
+
+//header .secondary-navbar {
+  // Aqui você pode adicionar algum estilo específico para a SecondaryNavbar, se necessário
+//}

@@ -1,0 +1,25 @@
+// src/components/Footer/Footer.scss
+
+.footer {
+    background-color: #222; // Cor de fundo escura para o rodapé
+    color: #fff; // Cor do texto branco
+    padding: 20px 0; // Espaçamento acima e abaixo
+    text-align: center; // Alinha o texto ao centro
+  
+    p {
+      font-size: 1rem; // Tamanho de fonte confortável
+      margin: 0; // Remove margens extras
+      letter-spacing: 1px; // Espaçamento entre letras
+    }
+  
+    // Adicionando um pequeno efeito visual para o rodapé
+    &:hover {
+      background-color: #333; // Muda a cor de fundo do rodapé quando passar o mouse
+    }
+  
+    // Para que o rodapé fique no final da página (se não houver muito conteúdo)
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  

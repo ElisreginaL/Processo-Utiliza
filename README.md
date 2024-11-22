@@ -4,6 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Before run ###`npm start` its necessary to run:
+
+React Routers
+Sass
+Bootstrap
+
+
 In the project directory, you can run:
 
 ### `npm start`

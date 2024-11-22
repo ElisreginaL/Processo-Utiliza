@@ -1,39 +1,35 @@
-// App.js
+// src/App.jsx
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Main from './components/Main';  // Importando o componente Main
-import Footer from './components/Footer';
-import './App.scss';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Assistencia24h from './pages/Setores/Assistencia24h/Assistencia24h'; // Página inicial do setor Assistência 24h
+import Comunicado from './pages/Setores/Comunicado/Comunicado'; // Página do setor Comunicado
+import Recebiveis from './pages/Setores/Recebiveis/Recebiveis'; // Página do setor Recebíveis
+import RotasSolidy from './pages/Setores/Assistencia24h/Solidy/rotas'; // Arquivo de rotas da Solidy
 
-// Adicione seus componentes que irão exibir as informações detalhadas
-import AtendimentoInicial from './components/process-details/AtendimentoInicial'; 
-import Acionamento from './components/process-details/Acionamento'; 
-import Colisao from './components/process-details/Colisao'; 
-import Finalizacao from './components/process-details/Finalizacao'; 
-import TelefonesUteis from './components/process-details/TelefonesUteis'; 
-import LinksUteis from './components/process-details/LinksUteis'; 
-import PassoAPasso from './components/process-details/PassoAPasso'; 
-import MascaraPadrao from './components/process-details/MascaraPadrao'; 
+import Footer from './components/Footer/Footer'; // Importando o rodapé
+import './App.scss';  // Importando os estilos globais
 
 function App() {
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Main />} />
-        {/* Definição das rotas para os detalhes do processo */}
-        <Route path="/atendimento-inicial" element={<AtendimentoInicial />} />
-        <Route path="/acionamento" element={<Acionamento />} />
-        <Route path="/colisao" element={<Colisao />} />
-        <Route path="/finalizacao" element={<Finalizacao />} />
-        <Route path="/telefones-uties" element={<TelefonesUteis />} />
-        <Route path="/links-uties" element={<LinksUteis />} />
-        <Route path="/passo-a-passo" element={<PassoAPasso />} />
-        <Route path="/mascara-padrao" element={<MascaraPadrao />} />
-      </Routes>
-      <Footer />
-    </>
+    <div className="wrapper">
+      <div className="main-content">
+        <Routes>
+          {/* Rota principal (página inicial do site) */}
+          <Route path="/" element={<Home />} />
+
+          {/* Rota para o setor Assistência 24h */}
+          <Route path="/assistencia24h/*" element={<Assistencia24h />} />
+          <Route path="/assistencia24h/solidy/*" element={<RotasSolidy />} />
+
+          {/* Rota para o setor Comunicado */}
+          <Route path="/comunicado/*" element={<Comunicado />} />
+
+          {/* Rota para o setor Recebíveis */}
+          <Route path="/recebiveis/*" element={<Recebiveis />} />
+        </Routes>
+      </div>
+    </div>
   );
 }
 

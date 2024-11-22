@@ -1,0 +1,31 @@
+// src/pages/Home/Home.scss
+
+// Importando os estilos específicos dos componentes
+@import '../../components/Header/Header.scss';
+@import '../../components/Main/Main.scss';
+@import '../../components/Footer/Footer.scss';
+
+// Estilos para a seção de Regulamentos na Home
+.regulamentos {
+  margin-top: 40px;
+
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #007bff;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

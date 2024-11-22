@@ -1,0 +1,70 @@
+// src/components/Main/Main.scss
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+// Estilos para o carrossel de imagens (Atualizações)
+.carrossel {
+  display: flex;
+  overflow: hidden;
+  gap: 10px;
+
+  .slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  .carrossel-imagem {
+    width: 20%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+// Estilos para as notícias da semana
+
+.noticias {
+  background-color: #dfdcdc;
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 5%;
+  padding: 20px;
+  border-radius: 13px;
+}
+.noticias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.noticias li {
+  margin-bottom: 20px;
+}
+
+.noticia-conteudo {
+  display: flex; /* Faz a descrição e o botão ficarem lado a lado */
+  justify-content: space-between; /* Alinha os itens nas extremidades */
+  align-items: center; /* Alinha verticalmente os itens */
+  width: 70%;
+}
+
+.btn-leia-mais {
+  display: inline-block;
+  margin-top: -15px;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}

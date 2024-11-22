@@ -1,60 +1,27 @@
 /* App.scss */
+
+/* Estilo para a aplicação */
 .App {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* A altura mínima é 100vh para garantir que a aplicação ocupe toda a altura da tela */
+  flex-direction: column; /* Layout em coluna */
+  min-height: 100vh; /* Altura mínima da aplicação, ocupa toda a tela */
+  margin: 0px;
 }
 
-header {
-  color: white;
-  padding: 20px;
-  display: grid;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-}
-
-header nav a {
-  color: white;
-  text-decoration: none;
-}
-
-header .login button {
-  background-color: #007bff;
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-header .login button:hover {
-  background-color: #0056b3;
-}
-
+/* Contêiner do conteúdo principal */
 .main-content {
+  flex: 1; /* Faz o conteúdo principal ocupar o espaço restante */
   display: flex;
-  flex: 1; /* Isso vai fazer o conteúdo principal ocupar o espaço restante */
-  padding: 20px;
-  flex-direction: column; /* Organizando os elementos dentro de .main-content de forma vertical */
-  margin-top: 20px;
+  flex-direction: column; /* Organiza os itens em coluna */
 }
 
-.search-box {
-  margin-top: 20px;
-}
-
+/* Rodapé */
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 10px;
-  /* Alteração aqui para fixar o footer no final */
-  position: absolute;
+  position: relative; /* Rodapé fica no final da página */
   bottom: 0;
   width: 100%;
 }

@@ -69,7 +69,7 @@ function Acionamento() {
                 </div>
                 {isCredenciadoOpen && (
                   <div className="additional-content">
-                    <p>Informações adicionais sobre o "Acionamento credenciado"...</p>
+                    <p>Informações adicionais sobre o "Aciona155611212122112111254mento credenciado"...</p>
                   </div>
                 )}
             </div>

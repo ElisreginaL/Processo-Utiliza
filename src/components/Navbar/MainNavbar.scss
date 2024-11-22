@@ -1,0 +1,70 @@
+// Estilo geral para a Navbar
+.main-navbar {
+  background-color: #333; // Cor de fundo escura
+  padding: 15px 0;
+
+  .navbar-brand {
+    font-size: 1.8rem; // Aumenta o tamanho do texto da marca
+    font-weight: bold;
+    color: #fff !important; // Garante que o texto da marca seja branco
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007bff !important; // Efeito hover para a marca
+    }
+  }
+
+  
+  .navbar-toggler {
+    border-color: #007bff; // Cor da borda do botão de toggle
+    &:focus {
+      outline: none; // Remove o outline no foco
+    }
+
+    .navbar-toggler-icon {
+      background-color: #007bff; // Cor do ícone do botão de toggle
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: #fff !important; // Garante que os links sejam brancos
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-right: 20px;
+      padding: 8px 12px;
+      transition: color 0.3s ease, background-color 0.3s ease;
+
+      &:hover {
+        color: #007bff !important; // Cor de texto quando passar o mouse
+        background-color: #444; // Cor de fundo ao passar o mouse
+      }
+    }
+  }
+
+  .navbar-collapse {
+    justify-content: flex-end; // Alinha os itens da navbar à direita
+  }
+
+  // Estilos para o dropdown menu
+  .nav-dropdown {
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  // Estilos para o menu de login
+  .nav-link:last-child {
+    background-color: #007bff; // Cor de fundo do link de login
+    color: white !important; // Cor do texto do link de login
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #0056b3; // Cor de fundo ao passar o mouse no login
+      color: white !important;
+    }
+  }
+}

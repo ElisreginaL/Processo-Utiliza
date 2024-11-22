@@ -1,0 +1,80 @@
+// src/components/Navbar/SecondaryNavbar.scss
+
+// Estilo geral para a Navbar
+.secondary-navbar {
+    background-color: #222; // Cor de fundo escura
+    padding: 10px 0;
+  
+    .navbar-brand {
+      font-size: 1.6rem; // Aumenta o tamanho do texto da marca
+      font-weight: bold;
+      color: #fff !important; // Garante que o texto da marca seja branco
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: #007bff !important; // Cor no hover para a marca
+      }
+    }
+  
+    .navbar-toggler {
+      border-color: #007bff; // Cor da borda do botão de toggle
+      &:focus {
+        outline: none; // Remove o outline no foco
+      }
+  
+      .navbar-toggler-icon {
+        background-color: #007bff; // Cor do ícone do botão de toggle
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: #fff !important; // Cor dos links
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-right: 20px;
+        padding: 8px 12px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+  
+        &:hover {
+          color: #007bff !important; // Cor de texto quando passar o mouse
+          background-color: #444; // Cor de fundo ao passar o mouse
+        }
+      }
+  
+      .nav-dropdown-item {
+        color: #fff; // Cor dos itens do dropdown
+        font-size: 1.1rem;
+  
+        &:hover {
+          background-color: #007bff; // Cor de fundo ao passar o mouse
+          color: #fff;
+        }
+      }
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end; // Alinha os itens da navbar à direita
+    }
+  
+    // Estilos para o menu suspenso (NavDropdown)
+    .nav-dropdown {
+      .dropdown-menu {
+        background-color: #333; // Cor de fundo do menu suspenso
+        border-radius: 5px;
+  
+        .dropdown-item {
+          color: #fff !important; // Cor do texto dos itens do dropdown
+          font-size: 1rem;
+          padding: 10px 20px;
+  
+          &:hover {
+            background-color: #007bff; // Cor de fundo do item ao passar o mouse
+            color: #fff !important; // Garante que a cor do texto seja branca no hover
+          }
+        }
+      }
+    }
+  }
+  
